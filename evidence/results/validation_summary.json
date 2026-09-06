@@ -1,0 +1,55 @@
+{
+  "validation_status": "passed",
+  "row_count": 100,
+  "baseline_correct": 91,
+  "v2_correct": 98,
+  "accuracy_delta_percentage_points": 7,
+  "changed_predictions": 9,
+  "outcome_counts": {
+    "still_correct": 90,
+    "wrong_to_right": 8,
+    "right_to_wrong": 1,
+    "still_wrong": 1
+  },
+  "win_ids": [
+    "t004",
+    "t005",
+    "t006",
+    "t007",
+    "t044",
+    "t045",
+    "t046",
+    "t047"
+  ],
+  "regression_ids": [
+    "t052"
+  ],
+  "remaining_failure_ids": [
+    "t054"
+  ],
+  "v2_failures": [
+    {
+      "id": "t052",
+      "ticket_text": "The product description said 'wireless' but I had to buy a separate dongle to use it. Misleading.",
+      "true_category": "product_issue",
+      "predicted_category": "other",
+      "reasoning": "The issue is about misleading product information rather than a specific order, refund, or product defect."
+    },
+    {
+      "id": "t054",
+      "ticket_text": "Could you please clarify why the product is labeled as 'wireless'? I ended up needing to purchase a dongle separately, which seems misleading. Thank you.",
+      "true_category": "product_issue",
+      "predicted_category": "other",
+      "reasoning": "The customer is asking for clarification about product labeling, which does not fit into the other specified categories."
+    }
+  ],
+  "run_name": "focused_routing_policy_v2",
+  "prompt_version": "v2",
+  "hashes": {
+    "results_v1_raw.csv": "49F111854B1F80E0371EABAA1525FA681AE8F431D0FFD4697359E8B59B07481C",
+    "results_v2_raw.csv": "ACA21B0369D6C795363944D80B5E37D9077A71773CBE258C44695B0B528E9D59",
+    "baseline_vs_improved.csv": "435FA5F498535632F644B76E7619D7CC769C327C46698974B0ABC10B7D2F42DB",
+    "classifier_prompt_v2_executed.txt": "9BCCC93324A2DA4BA72E279A7BF3AEE7EE3333AE37220F05647FEC2314912AC6",
+    "classifier_prompt_v2.txt": "9BCCC93324A2DA4BA72E279A7BF3AEE7EE3333AE37220F05647FEC2314912AC6"
+  }
+}

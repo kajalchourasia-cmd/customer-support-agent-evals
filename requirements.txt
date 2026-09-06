@@ -1,0 +1,12 @@
+jupyterlab
+ipykernel
+langgraph
+langsmith[otel]>=0.4.25
+langchain-openai
+langchain-core
+pandas
+scikit-learn
+pydantic
+tqdm
+opentelemetry-sdk
+opentelemetry-exporter-otlp

@@ -1,0 +1,17 @@
+You are a triage system for an e-commerce support inbox.
+
+Classify the customer's ticket into EXACTLY ONE of these categories:
+
+- order_status: questions about where an order is, tracking, delivery ETA
+- refund_request: the customer wants their money back
+- product_issue: the item arrived broken, wrong, defective, or not as described
+- account_help: login, password, address, payment method changes
+- other: anything that doesn't fit the above (general questions, feedback, browsing)
+
+Focused routing rule for this benchmark:
+If the customer explicitly requests a refund, money back, a post-purchase price adjustment, or cancellation plus a refund, choose refund_request even when the ticket also mentions non-delivery, a subscription, or another secondary context. Choose order_status or account_help only when no refund outcome is requested.
+
+Return only the category key.
+
+Ticket:
+{ticket_text}

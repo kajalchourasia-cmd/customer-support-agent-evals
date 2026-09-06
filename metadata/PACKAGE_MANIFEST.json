@@ -1,0 +1,47 @@
+{
+  "package": "Customer Support Agent Evaluation - Final Submission",
+  "author": "Kajal",
+  "required_artifacts": {
+    "completed_workbook": "Week4_Customer_Support_Evaluation_Kajal_completed.xlsx",
+    "executed_notebook": "week4_customer_support_evals_executed.ipynb",
+    "case_study": "Customer_Support_Evaluation_Case_Study.pdf",
+    "loom_script": "Loom_Recording_Transcript.md"
+  },
+  "validated_evidence": {
+    "supplied_workbook": {
+      "rows": 150,
+      "correct": 121,
+      "failures": 29,
+      "failure_groups": [12, 9, 4, 4]
+    },
+    "frozen_notebook_comparison": {
+      "rows": 100,
+      "baseline_correct": 91,
+      "focused_correct": 98,
+      "stable_passes": 90,
+      "wins": 8,
+      "regressions": 1,
+      "remaining_failures": 1,
+      "decision": "Review",
+      "decision_reason": "Regression rate 1/91 = 1.10%, above the 1% pass bar."
+    },
+    "separate_workbook_aligned_comparison": {
+      "rows": 150,
+      "original_prompt_correct": 145,
+      "focused_prompt_correct": 146,
+      "wins": 1,
+      "regressions": 0,
+      "remaining_failures": 4,
+      "decision": "Review",
+      "decision_reason": "Precision for other is 0.882, below the 0.90 class-level bar."
+    }
+  },
+  "quality_checks": {
+    "workbook_required_checks": "22/22 passed",
+    "notebook_error_outputs": 0,
+    "notebook_saved_secret_patterns": 0,
+    "case_study_pages": 7,
+    "selected_evidence_images": 6
+  },
+  "integrity_note": "Benchmark-informed later iterations, partial recovery runs, challenge-set experiments, and perfect-score claims are excluded. The package makes no hidden-test or production-performance claim."
+}
