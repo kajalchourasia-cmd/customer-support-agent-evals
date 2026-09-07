@@ -1,6 +1,6 @@
 {
   "package": "Customer Support Agent Evaluation - Final Submission",
-  "author": "Kajal",
+  "author": "Kajal Chourasia",
   "required_artifacts": {
     "completed_workbook": "Week4_Customer_Support_Evaluation_Kajal_completed.xlsx",
     "executed_notebook": "week4_customer_support_evals_executed.ipynb",
@@ -40,8 +40,10 @@
     "workbook_required_checks": "22/22 passed",
     "notebook_error_outputs": 0,
     "notebook_saved_secret_patterns": 0,
-    "case_study_pages": 7,
-    "selected_evidence_images": 6
+    "case_study_pages": 22,
+    "case_study_figures": 15,
+    "google_doc_native_tables": 21,
+    "selected_evidence_screenshots": 6
   },
   "integrity_note": "Benchmark-informed later iterations, partial recovery runs, challenge-set experiments, and perfect-score claims are excluded. The package makes no hidden-test or production-performance claim."
 }

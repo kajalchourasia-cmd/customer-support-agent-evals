@@ -9,7 +9,8 @@
 | Deliverable | Link |
 |---|---|
 | Project documentation | [Open the full Google Doc](https://docs.google.com/document/d/1n_LMh7LhJMKXgKXJWg9dqDNyviztHkASilYU_eq0Izk/edit) |
-| Case study | [Read the seven-page PDF](docs/Customer_Support_Evaluation_Case_Study.pdf) |
+| Case study | [Read the detailed 22-page PDF](docs/Customer_Support_Evaluation_Case_Study.pdf) |
+| Case study source | [Read the accessible Markdown edition](docs/Customer_Support_Evaluation_Case_Study.md) |
 | Completed evaluation workbook | [Download the completed workbook](workbook/Week4_Customer_Support_Evaluation_Kajal_completed.xlsx) |
 | Executed notebook | [Open the V1/V2 evaluation notebook](notebook/week4_customer_support_evals_executed.ipynb) |
 | Loom narration | [Read the word-for-word video transcript](docs/Loom_Recording_Transcript.md) |
@@ -158,6 +159,7 @@ This candidate also remains **Review** because precision for `other` is 0.882, b
 │   └── diagrams/
 ├── docs/
 │   ├── Customer_Support_Evaluation_Case_Study.pdf
+│   ├── Customer_Support_Evaluation_Case_Study.md
 │   └── Loom_Recording_Transcript.md
 ├── workbook/
 │   └── Week4_Customer_Support_Evaluation_Kajal_completed.xlsx
@@ -189,7 +191,7 @@ Open the notebook and provide API credentials through environment variables or a
 - Completed workbook: 22/22 required compliance checks passed
 - Executed notebook: 0 saved error outputs
 - Secret scan: 0 saved OpenAI or LangSmith key patterns
-- Case study: 7 pages, visually reviewed
+- Case study: 22 pages and 15 figures, visually reviewed page by page
 - Outcome accounting: 90 + 8 + 1 + 1 = 100
 - Evidence files include SHA-256 records in `metadata/`
 
@@ -200,4 +202,3 @@ Open the notebook and provide API credentials through environment variables or a
 - The notebook set includes seeds and paraphrases, limiting independence.
 - Aggregate accuracy can conceal class and severity-specific risk.
 - The evidence does not establish organizer-hidden or production performance.
-

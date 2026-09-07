@@ -77,5 +77,4 @@ The notebook set contains seed cases and paraphrases, which limits independence.
 
 **Screen:** Return to the submission folder.
 
-The final package includes the completed workbook, executed notebook, seven-page case study, raw V1 and V2 exports, selected LangSmith screenshots, hashes, and this narration. The main result is a clear accuracy improvement with fully reconciled wins and regressions, accompanied by an explicit Review decision because the regression gate is slightly missed. Thank you.
-
+The final package includes the completed workbook, executed notebook, detailed 22-page case study, raw V1 and V2 exports, selected LangSmith screenshots, hashes, and this narration. The main result is a clear accuracy improvement with fully reconciled wins and regressions, accompanied by an explicit Review decision because the regression gate is slightly missed. Thank you.

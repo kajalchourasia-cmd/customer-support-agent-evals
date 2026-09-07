@@ -5,6 +5,10 @@ langsmith[otel]>=0.4.25
 langchain-openai
 langchain-core
 pandas
+matplotlib
+openpyxl
+Pillow
+python-docx
 scikit-learn
 pydantic
 tqdm

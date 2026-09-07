@@ -1,0 +1,465 @@
+{
+  "notebook_v1": {
+    "accuracy": 0.91,
+    "classification_report": {
+      "order_status": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.888888888888889,
+        "support": 20
+      },
+      "refund_request": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1-score": 0.8333333333333333,
+        "support": 20
+      },
+      "product_issue": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1-score": 0.8571428571428571,
+        "support": 20
+      },
+      "account_help": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20
+      },
+      "other": {
+        "precision": 0.9523809523809523,
+        "recall": 1.0,
+        "f1-score": 0.975609756097561,
+        "support": 20
+      },
+      "macro avg": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9099999999999999,
+        "f1-score": 0.910994967092528,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        16,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        15,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "notebook_v2": {
+    "accuracy": 0.98,
+    "classification_report": {
+      "order_status": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20
+      },
+      "refund_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20
+      },
+      "product_issue": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526316,
+        "support": 20
+      },
+      "account_help": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20
+      },
+      "other": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 20
+      },
+      "macro avg": {
+        "precision": 0.9818181818181818,
+        "recall": 0.9800000000000001,
+        "f1-score": 0.9799498746867169,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        18,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "notebook_outcomes": {
+    "still_correct": 90,
+    "wrong_to_right": 8,
+    "right_to_wrong": 1,
+    "still_wrong": 1
+  },
+  "notebook_changed_cases": [
+    {
+      "id": "t004",
+      "ticket_text": "I never received my order and I want my money back.",
+      "true_category": "order_status",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "order_status",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t005",
+      "ticket_text": "I've been waiting for my order, and it's still not here! I demand a refund immediately!",
+      "true_category": "order_status",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "order_status",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t006",
+      "ticket_text": "Hello, I'm reaching out because my order hasn't arrived yet. Could you please help me get a refund? My order number was 12543. Thank you!",
+      "true_category": "order_status",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "order_status",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t007",
+      "ticket_text": "Order #98765 is missing, and I'm pretty upset about it. Can you just refund me already?",
+      "true_category": "order_status",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "order_status",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t044",
+      "ticket_text": "My laptop arrived damaged and I want a full refund, not a replacement.",
+      "true_category": "product_issue",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "product_issue",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t045",
+      "ticket_text": "I received my laptop in a damaged condition and I expect a complete refund, not a replacement.",
+      "true_category": "product_issue",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "product_issue",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t046",
+      "ticket_text": "I'm really unhappy because my laptop showed up broken, and I just want my money back instead of getting a new one.",
+      "true_category": "product_issue",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "product_issue",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t047",
+      "ticket_text": "The laptop I ordered came in with damage and I'd prefer a full refund rather than a replacement.",
+      "true_category": "product_issue",
+      "predicted_category_v1": "refund_request",
+      "predicted_category_v2": "product_issue",
+      "outcome": "wrong_to_right"
+    },
+    {
+      "id": "t052",
+      "ticket_text": "The product description said 'wireless' but I had to buy a separate dongle to use it. Misleading.",
+      "true_category": "product_issue",
+      "predicted_category_v1": "product_issue",
+      "predicted_category_v2": "other",
+      "outcome": "right_to_wrong"
+    }
+  ],
+  "official_controlled_v1": {
+    "accuracy": 0.9666666666666667,
+    "classification_report": {
+      "order_status": {
+        "precision": 1.0,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.9787234042553191,
+        "support": 24
+      },
+      "refund_request": {
+        "precision": 1.0,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9879518072289156,
+        "support": 42
+      },
+      "product_issue": {
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1-score": 0.9795918367346939,
+        "support": 24
+      },
+      "account_help": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526316,
+        "support": 30
+      },
+      "other": {
+        "precision": 0.8823529411764706,
+        "recall": 1.0,
+        "f1-score": 0.9375,
+        "support": 30
+      },
+      "macro avg": {
+        "precision": 0.968470588235294,
+        "recall": 0.9669047619047619,
+        "f1-score": 0.966227093854312,
+        "support": 150
+      }
+    },
+    "confusion_matrix": [
+      [
+        23,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        41,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        27,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        30
+      ]
+    ]
+  },
+  "official_focused_v2": {
+    "accuracy": 0.9733333333333334,
+    "classification_report": {
+      "order_status": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24
+      },
+      "refund_request": {
+        "precision": 1.0,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9879518072289156,
+        "support": 42
+      },
+      "product_issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24
+      },
+      "account_help": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526316,
+        "support": 30
+      },
+      "other": {
+        "precision": 0.8823529411764706,
+        "recall": 1.0,
+        "f1-score": 0.9375,
+        "support": 30
+      },
+      "macro avg": {
+        "precision": 0.9764705882352942,
+        "recall": 0.9752380952380953,
+        "f1-score": 0.9745640456563095,
+        "support": 150
+      }
+    },
+    "confusion_matrix": [
+      [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        41,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        27,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        30
+      ]
+    ]
+  },
+  "official_remaining_failures": [
+    {
+      "id": "t050",
+      "ticket_text": "Item went on sale right after I ordered. Do you do price adjustments?",
+      "true_category": "refund_request",
+      "predicted_category_focused_v2": "other",
+      "failure_group_from_supplied_workbook": "Refund_Intent_Underrouted"
+    },
+    {
+      "id": "t114",
+      "ticket_text": "The discount code from your newsletter won't apply at checkout. Says 'invalid'.",
+      "true_category": "account_help",
+      "predicted_category_focused_v2": "other",
+      "failure_group_from_supplied_workbook": "Account_Journey_Misrouted"
+    },
+    {
+      "id": "t115",
+      "ticket_text": "Newsletter promo code is being rejected at checkout as invalid.",
+      "true_category": "account_help",
+      "predicted_category_focused_v2": "other",
+      "failure_group_from_supplied_workbook": "Account_Journey_Misrouted"
+    },
+    {
+      "id": "t116",
+      "ticket_text": "My promo code says 'invalid' even though I just got the newsletter.",
+      "true_category": "account_help",
+      "predicted_category_focused_v2": "other",
+      "failure_group_from_supplied_workbook": "Account_Journey_Misrouted"
+    }
+  ],
+  "official_win": [
+    {
+      "id": "t025",
+      "ticket_text": "Carrier delivered to the wrong address. The address on the label is not mine.",
+      "true_category": "order_status",
+      "predicted_category_controlled_v1": "product_issue",
+      "predicted_category_focused_v2": "order_status"
+    }
+  ],
+  "notebook_operational_v1": {
+    "rows": 100,
+    "successful_rows": 100,
+    "allowed_category_feedback_rows": 100,
+    "exact_match_feedback_rows": 100,
+    "allowed_category_average_scored": 1.0,
+    "exact_match_average_scored": 0.91,
+    "mean_latency_seconds": 0.7727267999999998,
+    "p50_latency_seconds": 0.6778774999999999,
+    "p95_latency_seconds": 1.0284054999999996,
+    "p99_latency_seconds": 1.990143770000014,
+    "mean_tokens": 241.52,
+    "total_tokens": 24152.0,
+    "mean_cost_usd": 4.6883999999999994e-05,
+    "total_cost_usd": 0.0046884
+  },
+  "notebook_operational_v2": {
+    "rows": 100,
+    "successful_rows": 100,
+    "allowed_category_feedback_rows": 100,
+    "exact_match_feedback_rows": 100,
+    "allowed_category_average_scored": 1.0,
+    "exact_match_average_scored": 0.98,
+    "mean_latency_seconds": 0.8547181,
+    "p50_latency_seconds": 0.6779999999999999,
+    "p95_latency_seconds": 1.5095984499999984,
+    "p99_latency_seconds": 3.6248665900000034,
+    "mean_tokens": 476.46,
+    "total_tokens": 47646.0,
+    "mean_cost_usd": 8.299799999999998e-05,
+    "total_cost_usd": 0.008299799999999998
+  }
+}
